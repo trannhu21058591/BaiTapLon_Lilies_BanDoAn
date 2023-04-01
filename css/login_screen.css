@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1440px;
+    height: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.image{
+    width: 737px;
+    height: 1024px;
+    position: relative;
+}
+.image img{
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+.login{
+    width: 703px;
+    height: 1024px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.login2{
+    width: 527px;
+}
+.login2 input{
+    width: 489px;
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid #FBDDBB;
+    padding-left: 35px;
+    font-size: 18px;
+    margin-bottom: 50px;
+    
+}
+
+.login4 button{
+    width: 527px;
+    height: 68px;
+    font-weight: 800;
+    color: #FBDDBB;
+    border: none;
+    border-radius: 5px;
+    background-color: #00302E;
+}
+.login5{
+    display: flex;
+    width: 524px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.login5_1 a{
+    text-decoration: none;
+    color: #00302E;
+    opacity: 91%;
+}
+
+.login1 h2{
+    margin-bottom: 80px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 360px){
+    
+
+    .container{
+        position: relative;
+        width: 360px;
+        height: 640px;
+        outline: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+    }
+
+    .login{
+        position: absolute;
+        background-color: white;
+        width: 274px;
+        height: 294px;
+        opacity: 85%;
+        top: 25px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+    }
+    .login2{
+        width: 151px;
+    }
+    .login2 input {
+        width: 150px;
+        height: 40px;
+        left: 0;
+        position: relative;
+        top: 60px;
+    }
+    .login4 button{
+        width: 150px;
+        height: 40px;
+        left: 50px;
+        position: relative;
+        top: 60px;
+        left: 10px;
+    }
+    .login5{
+        width: 150px;
+
+    }
+    .login5 a{
+        font-size: 10px;
+    }
+    .login1 h2{
+        font-size: 15px;
+        position: absolute;
+    }
+    
+}
