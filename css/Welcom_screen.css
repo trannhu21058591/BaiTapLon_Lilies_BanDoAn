@@ -55,6 +55,9 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 50px;
 }
+.header_menu_login a:hover{
+    color: #FBDDBB;
+}
 .header_menu_signup button{
     width: 140px;
     height: 50px;
