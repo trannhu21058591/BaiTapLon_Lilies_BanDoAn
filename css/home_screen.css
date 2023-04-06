@@ -1,4 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -62,6 +63,8 @@ body{
 .banner_img img{
     width: 100%;
     height: 621px;
+    object-fit: cover;
+
 }
 .banner{
     position: relative;
@@ -77,7 +80,7 @@ body{
     transform: translate(-50%, -50%);
     background: rgba(0, 48, 46, 0.75);
   }
-  .banner_text p{
+.banner_text p{
     width: 893px;
     height: 300px;
     position: absolute;
@@ -90,7 +93,7 @@ body{
     font-size: 80px;
     line-height: 100px;
   }
-  .menu_mini{
+.menu_mini{
     display: flex;
     height: 77px;
     width: 100%;
@@ -99,13 +102,140 @@ body{
     margin-top: -4px;
     align-items: center;
   }
-  .menu_mini a{
+.menu_text{
     color: #00302E;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+.menu_text_2, .menu_text_3, .menu_text_4, .menu_text_5, .menu_text_5, .menu_text_6, .menu_text_7{
     margin-left: 60px;
     margin-right: 10px;
   }
+.menu_text_1{
+    margin-left: 24px;
+    margin-right: 10px;
+}
+.listfood_1, .listfood_2, .listfood_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.listfood_1{
+    margin-top: 76px;
+}
+.listfood_2, .listfood_3{
+    margin-top: 3px;
+}
+
+.inforfood1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.infor_title1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #00302E;
+    margin-bottom: 5px;
+}
+.infor_text1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    width: 1010px;
+    height: 60px;   
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.infor_text2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+.food{
+    width: 354px;
+    height: 389px;
+    border: 1px solid #00302E;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.food_img{
+    width: 145px;
+    height: 142.06px;
+    border-radius: 400px;
+    margin-top: 22px;
+}
+.food_name{
+    width: 136px;
+    height: 39px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    color: #00302E;
+    margin-top: -28px;
+    
+}
+.food_infor{
+    width: 187px;
+    height: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.69);
+    margin-top: -46px;
+}
+.box_infor1{
+    display: grid;
+    gap: 53px 47px;
+    grid-template-columns: auto auto auto;
+    padding: 71px;
+}
+.footer_div_food{
+    display: flex;
+    width: 354px;
+    justify-content: space-around;
+    margin-bottom: 17px;
+}
+.food_price{
+    font-family: 'Poppins', sans-serif;
+    width: 104px;
+    height: 33px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    color: #00302E;
+}
+.btn_cart{
+    border: none;
+    background: none;
+    width: 113px;
+    height: 33px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: right; 
+    color: #06E775;
+}
