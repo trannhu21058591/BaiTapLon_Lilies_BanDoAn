@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/logIn_screen_VS02.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <video src="/image/video.mp4" autoplay loop  muted class="video_left"></video>
+        </div>
+        <div class="right">
+            <div class="form">
+                <div class="login_signup">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login_click()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register_click()">Register</button>
+                </div>
+                <form id="login_from" class="input_group">
+                    <h3>Welcome back!</h3>
+                    <input type="text" class="input_field" placeholder="Enter your Email">
+                    <input type="password" class="input_field" placeholder="Enter your password">
+                    <button type="submit" class="submit_btn">LOGIN</button>
+                </form>
+                <form id="register_form" class="register_group">
+                    <h3>Welcome!</h3>
+                    <input type="text" class="input_field" placeholder="Enter your last name">
+                    <input type="text" class="input_field" placeholder="Enter your Email">
+                    <input type="password" class="input_field" placeholder="Enter your password">
+                    <button type="submit" class="submit_btn">SIGN UP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/login_screen_VS02.js"></script>
+</body>
+</html>
