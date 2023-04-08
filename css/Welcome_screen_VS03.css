@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambay:ital@1&family=Poppins:wght@100&family=Schibsted+Grotesk:ital@1&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-height: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0,.7),rgb(0, 0, 0,.7)), url(/image/pexels_burger-photo-1600727.jpeg) repeat fixed left top;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nd{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.nd p{
+    font-size: 100px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-family: 'Cambay', sans-serif;
+    line-height: 120px;
+    margin: 40px 0px 10px 0px;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    transition: .3s;
+}
+.sticky{
+    background-color: #002423;
+}
+.sticky .header{
+    margin: 10px 140px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 140px;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo p{
+    font-size: 25px;
+    color: white;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.menu ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu ul li.active a{
+    color: #FFC98B;
+}
+.menu ul li a:hover{
+    color: #FFC98B;
+}
+
+
+.menu_img{
+    position: absolute;
+    right: 80px;
+    display: none;
+    cursor: pointer;
+}
+.menu_small{
+    backdrop-filter: blur(20px);
+    width: 45%;
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    border-radius: 15px;
+    height: 0px;
+    overflow: hidden;
+}
+.open_menu_small{
+    height: 320px;
+    border: 1px solid white;
+}
+.menu_small ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.menu_small ul li{
+    list-style: none;
+    margin-bottom: 30px;
+    width: 80%;
+    text-align: center;
+}
+.menu_small ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu_small ul li.active a{
+    color: #FFC98B;
+}
+.menu_small ul li:hover{
+    border-left: 3px solid #FFC98B;
+    border-right: 3px solid #FFC98B;
+    background-color: rgb(255, 201, 139,.2);
+}
+
+.center{
+    width: 100%;
+    background-color: rgb(10, 44, 10);
+}
+/*---------------------------------------------------------------------------------------*/
+@media screen and (max-width: 834px){
+    .banner{
+        height: 40vh;
+    }
+    .header{
+        margin: 30px 80px;
+    }
+    .sticky .header{
+        margin: 10px 80px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu_img{
+        display: block;
+    }
+    .menu_small{
+        display: block;
+    }
+    .nd{
+        width: 80%;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    .nd p{
+        font-size: 50px;
+        line-height: 60px;
+        margin: 20px 0px 5px 0px;
+    }
+    
+}
+/*---------------------------------------------------------------------------------------*/
+@media screen and (max-width: 360px){
+    .banner{
+        height: 30vh;
+    }
+    .nd{
+        margin-top: 30px;
+        width: 80%;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    .nd p{
+        font-size: 20px;
+        line-height: 20px;
+        margin: 10px 0px 5px 0px;
+    }
+   
+    .logo img{
+        width: 15px;
+    }
+    .logo p{
+        font-size: 10px;
+        color: white;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 30px;
+        align-items: center;
+    }
+    .menu_img img{
+        width: 15px;
+    }
+    .menu_img{
+        top:10px;
+        right:30px;
+    }
+    .menu_small{
+        top: 40px;
+        right: 30px;
+        width: 150px;
+    }
+    .menu_small ul li a{
+        font-size: 10px;
+    }
+    .menu_small ul li{
+        margin-bottom: 10px;
+    }
+    .open_menu_small{
+        height: 200px;
+    }
+}
