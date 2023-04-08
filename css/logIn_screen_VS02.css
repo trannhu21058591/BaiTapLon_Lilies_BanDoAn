@@ -15,6 +15,10 @@ body{
 .left{
     height: 100%;
     width: 50%;
+    background-image: url(/image/pexels_burger-photo-1600727.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .left img{
     width: 100%;
