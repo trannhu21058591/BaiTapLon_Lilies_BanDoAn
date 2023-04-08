@@ -168,7 +168,8 @@ body{
     color: #000000;
 }
 .food{
-    width: 354px;
+    /* width: 354px; */
+
     height: 389px;
     border: 1px solid #00302E;
     border-radius: 5px;
@@ -207,6 +208,7 @@ body{
     margin-top: -46px;
 }
 .box_infor1{
+    width: 80%;
     display: grid;
     gap: 53px 47px;
     grid-template-columns: auto auto auto;
@@ -332,6 +334,38 @@ body{
     position: absolute;
     opacity: 10%;
 }
+/* */
+footer{
+    position: fixed;
+    bottom: -20px;
+    width: 96.115%;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-bottom: 50px;
+}
+
+footer .shopping{
+    position: relative;
+    text-align: right;
+}
+
+footer .shopping img{
+    width: 40px;
+}
+footer .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 70%;
+    padding: 3px 10px;
+}
+/*  */
+
 #coating{
     position: fixed;
     width: 1440px;
