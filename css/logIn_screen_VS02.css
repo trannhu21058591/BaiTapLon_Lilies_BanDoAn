@@ -68,7 +68,6 @@ body{
     
 }
 .toggle-btn:hover{
-    color: rgb(255, 17, 0);
     transform: scale(1.2);
 }
 #btn{
@@ -120,6 +119,7 @@ h3{
     border-radius: 10px;
     color: #FBDDBB;
     font-weight: 600;
+    cursor: pointer;
 }
 .social_network{
     width: 100%;
@@ -130,6 +130,7 @@ h3{
     border-radius: 20px;
     justify-content: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 .social_network:hover{
     background-color: rgb(0, 48, 46,.1);
@@ -168,7 +169,7 @@ h3{
         left: 50%;
         transform: translate(-50%,-50%);
         width: 95%;
-        height: 55%;
+        height: 90%;
     }
     .form{
         background-color: transparent;
@@ -185,6 +186,9 @@ h3{
     .input_field{
         border: 1px solid white;
     }
+    h3{
+        color: white;
+    }
     .or{
         color: white;
     }
@@ -195,9 +199,58 @@ h3{
         color: white;
     }
 }
+@media only screen and (max-width: 480px){
+    .right{
+        height: 70%;
+    }
+    .form{
+        height: 100%;
+        width: 80%;
+    }
+    .login_signup{
+        
+    }
+    .toggle-btn{
+        font-size: 11px;
+    }
+    h3{
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .input_field{
+       height: 25px;
+       font-size: 10px;
+       padding-left: 15px;
+       margin-bottom: 10px;
+    }
+    .submit_btn{
+        height: 22px;
+        font-size: 9px;
+    }
+    .forgot{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .or{
+        font-size: 11px;
+        margin-top: 10px;
+    }
+    .icon{
+        width: 15px;
+        height: 15px;
+    }
+    .social_network p{
+        font-size: 11px;
+    }
+    .social_network{
+        height: 25px;
+        margin-top: 10px;
+    }
+}
 @media only screen and (max-width: 360px){
     .right{
-        height: 60%;
+        height: 80%;
     }
     .form{
         height: 100%;
