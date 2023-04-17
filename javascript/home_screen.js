@@ -3,6 +3,10 @@ let closeShopping = document.querySelector('.closeShopping');
 let list = document.querySelector('.list');
 let list1 = document.querySelector('.list1');
 let list2 = document.querySelector('.list2');
+let list3 = document.querySelector('.list3');
+let list4 = document.querySelector('.list4');
+let list5 = document.querySelector('.list5');
+let list6 = document.querySelector('.list6');
 let listCard = document.querySelector('.listCard');
 let body = document.querySelector('body');
 let total = document.querySelector('.total');
@@ -18,106 +22,248 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'Stir Fry Pasta',
+        name: 'Classic Beef Burger',
         image: 'burger1.png',
-        tt: 'The in-house pasta and chicken by chef Moose',
-        price: 56000
+        tt: 'A simple beef patty served with lettuce, tomato, onion, and a condiment such as ketchup or mustard.',
+        price: 70000
     },
     {
         id: 2,
-        name: 'Stir Fry Pasta',
-        image: 'burger1.png',
-        tt: 'The in-house pasta and chicken by chef Moose',
-        price: 56000
+        name: 'Bacon Cheeseburger',
+        image: 'burger1.1.jpg',
+        tt: 'A beef patty topped with cheese and crispy bacon, often served with lettuce and tomato.',
+        price: 88000
     },
     {
         id: 3,
-        name: 'Stir Fry Pasta',
-        image: 'burger1.png',
-        tt: 'The in-house pasta and chicken by chef Moose',
-        price: 56000
+        name: 'Mushroom Swiss Burger',
+        image: 'burger1.2.jpg',
+        tt: 'A beef patty topped with sautéed mushrooms and Swiss cheese, sometimes served with lettuce and tomato.',
+        price: 110000
     },
     {
         id: 4,
-        name: 'Stir Fry Pasta',
-        image: 'burger1.png',
-        tt: 'The in-house pasta and chicken by chef Moose',
-        price: 56000
+        name: 'BBQ Burger',
+        image: 'burger1.3.jpg',
+        tt: 'A beef patty topped with barbecue sauce, often with additional toppings such as onion rings or bacon.',
+        price: 108000
     },
     {
         id: 5,
-        name: 'Stir Fry Pasta',
-        image: 'burger1.png',
-        tt: 'The in-house pasta and chicken by chef Moose',
-        price: 56000
+        name: 'Blue Cheeseburger',
+        image: 'burger1.4.jpg',
+        tt: 'A beef patty topped with blue cheese, often served with lettuce and tomato.',
+        price: 129000
     },
     {
         id: 6,
-        name: 'Stir Fry Pasta',
-        image: 'burger1.png',
-        tt: 'The in-house pasta and chicken by chef Moose',
-        price: 56000
+        name: 'Jalapeño Burger',
+        image: 'burger1.5.jpg',
+        tt: ' A beef patty topped with jalapeño peppers and sometimes other spicy ingredients such as pepper jack cheese or hot sauce. It is often served with lettuce and tomato.',
+        price: 100000
     }
 ];
 
 let products1 = [
     {
         id: 7,
-        name1: 'Stir Fry Pasta',
-        image1: 'burger1.png',
-        tt1: 'The in-house pasta and chicken by chef Moose',
+        name1: 'Crispy Chicken Burger',
+        image1: 'burger2.1.jpg',
+        tt1: ' A sandwich made with a crispy chicken patty, typically breaded and deep-fried. It is often served with lettuce, tomato, and mayonnaise on a bun.',
         price1: 56000
     },
     {
         id: 8,
-        name1: 'Stir Fry Pasta',
-        image1: 'MeatBalls.png',
-        tt1: 'The in-house pasta and chicken by chef Moose',
-        price1: 56000
+        name1: 'Grilled Chicken Burger',
+        image1: 'burger2.2.jpg',
+        tt1: ' A sandwich made with a grilled chicken breast, often marinated or seasoned with spices.',
+        price1: 69000
     },
     {
         id: 9,
-        name1: 'Stir Fry Pasta',
-        image1: 'burger1.png',
-        tt1: 'The in-house pasta and chicken by chef Moose',
-        price1: 56000
+        name1: 'Spicy Chicken Burger',
+        image1: 'burger2.3.jpg',
+        tt1: ' A sandwich made with a chicken patty that has been seasoned with spices or hot sauce for a spicy flavor.',
+        price1: 80000
     }
 ];
 
 let products2 = [
     {
         id: 7,
-        name2: 'Stir Fry Pasta',
-        image2: 'burger1.png',
-        tt2: 'The in-house pasta and chicken by chef Moose',
-        price2: 56000
+        name2: 'Mushroom Veggie Burger',
+        image2: 'burger3.1.jpg',
+        tt2: 'A vegetarian burger patty made with mushrooms as the main ingredient.',
+        price2: 50000
     },
     {
         id: 8,
-        name2: 'Stir Fry Pasta',
-        image2: 'MeatBalls.png',
-        tt2: 'The in-house pasta and chicken by chef Moose',
-        price2: 56000
+        name2: 'Black Bean Veggie Burger',
+        image2: 'burger3.2.jpg',
+        tt2: 'A vegetarian burger patty made with black beans as the main ingredient.',
+        price2: 59000
     },
     {
         id: 9,
-        name2: 'Stir Fry Pasta',
-        image2: 'MeatBalls.png',
-        tt2: 'The in-house pasta and chicken by chef Moose',
-        price2: 56000
+        name2: 'Tofu Veggie Burger',
+        image2: 'burger3.3.jpg',
+        tt2: 'A vegetarian burger patty made with tofu as the main ingredient. ',
+        price2: 65000
+    }
+];
+
+let products3 = [
+    {
+        id3: 1,
+        name3: 'French Fries',
+        image3: 'fries1.1.jpg',
+        tt3: 'Slices of potatoes that are deep-fried until crispy on the outside and soft on the inside.',
+        price3: 32000
+    },
+    {
+        id3: 2,
+        name3: 'Curly Fries',
+        image3: 'fries1.2.jpg',
+        tt3: 'Similar to French fries, but with a twisted or curly shape. They are often seasoned with spices such as paprika.',
+        price3: 50000
+    },
+    {
+        id3: 3,
+        name3: 'Waffle Fries',
+        image3: 'fries1.3.jpg',
+        tt3: ' Waffle-shaped fries that are crispy on the outside and soft on the inside.',
+        price3: 58000
+    },
+    {
+        id3: 4,
+        name3: 'Sweet Potato Fries',
+        image3: 'fries1.4.jpg',
+        tt3: 'Slices of sweet potatoes that are deep-fried until crispy.',
+        price3: 71000
+    },
+    {
+        id3: 5,
+        name3: 'Chili Cheese Fries',
+        image3: 'fries1.5.jpg',
+        tt3: 'French fries topped with chili and melted cheese. This hearty snack is often served at sports events or as a bar food.',
+        price3: 99000
+    },
+    {
+        id3: 6,
+        name3: 'Garlic Fries',
+        image3: 'fries1.6.jpg',
+        tt3: 'French fries that are seasoned with garlic and herbs such as parsley and thyme.',
+        price3: 65000
+    }
+];
+
+let products4 = [
+    {
+        id: 10,
+        name4: 'Spaghetti',
+        image4: 'spa1.1.jpg',
+        tt4: 'A long, thin, cylindrical pasta of Italian origin, typically served with tomato sauce and meatballs.',
+        price4: 99000
+    },
+    {
+        id: 11,
+        name4: 'Fettuccine',
+        image4: 'spa1.2.jpg',
+        tt4: 'A flat, thick pasta that is commonly served with rich, creamy sauces such as Alfredo sauce.',
+        price4: 105000
+    },
+    {
+        id: 12,
+        name4: 'Linguine',
+        image4: 'spa1.3.jpg',
+        tt4: ' A narrow, flat pasta that is similar to spaghetti but wider. It is typically served with seafood or tomato-based sauces.',
+        price4: 100000
+    }
+];
+
+let products5 = [
+    {
+        id: 13,
+        name5: 'Italian Meatballs',
+        image5: 'mb1.1.jpg',
+        tt5: 'These meatballs are typically made from a mixture of ground beef, pork, and veal, along with breadcrumbs, Parmesan cheese, and various herbs and spices.',
+        price5: 150000
+    },
+    {
+        id: 14,
+        name5: 'Swedish Meatballs',
+        image5: 'mb1.2.jpg',
+        tt5: 'These meatballs are usually made with a mixture of ground pork and beef, along with breadcrumbs, milk, and spices.',
+        price5: 119000
+    },
+    {
+        id: 15,
+        name5: 'Turkey Meatballs',
+        image5: 'mb1.3.jpg',
+        tt5: 'These meatballs are made with ground turkey, breadcrumbs, eggs, and various seasonings. ',
+        price5: 145000
+    }
+];
+
+let products6 = [
+    {
+        id: 16,
+        name6: 'Coca-Cola',
+        image6: 'drink1.1.jpg',
+        tt6: 'The most popular carbonated soft drink, made with sugar, water, acid regulator, caffeine and flavorings.',
+        price6: 20000
+    },
+    {
+        id: 17,
+        name6: 'Sprite',
+        image6: 'drink1.2.jpg',
+        tt6: 'Another carbonated soft drink made with sugar, water, acid regulator and flavorings. It has a lemon-lime flavor and is caffeine-free. ',
+        price6: 20000
+    },
+    {
+        id: 18,
+        name6: 'Fanta',
+        image6: 'drink1.3.jpg',
+        tt6: ' A fruit-flavored carbonated soft drink, available in different flavors such as orange, grape and strawberry.',
+        price6: 20000
+    },
+    {
+        id: 19,
+        name6: 'Iced Tea',
+        image6: 'drink1.4.jpg',
+        tt6: ' A refreshing drink made with tea and served cold, sometimes with added fruit flavors such as peach or lemon.',
+        price6: 25000
+    },
+    {
+        id: 20,
+        name6: 'Lemonade',
+        image6: 'drink1.5.jpg',
+        tt6: 'A sweet and tangy drink made with lemon juice, sugar and water.',
+        price6: 30000
+    },
+    {
+        id: 21,
+        name6: 'Mineral Water',
+        image6: 'drink1.6.jpg',
+        tt6: 'A still, non-carbonated water that is often served with meals.',
+        price6: 15000
     }
 ];
  
 let listCards = [];
 let listCards1 = [];
 let listCards2 = [];
+let listCards3 = [];
+let listCards4 = [];
+let listCards5 = [];
+let listCards6 = [];
 
 function initApp(){
     products.forEach((value, key) => {
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img class="food_img" src="/image/${value.image}">
+            <div class="div_img_food"><img class="food_img" src="/image/${value.image}"></div>       
             <div class="food_name">${value.name}</div>
             <div class="food_infor">${value.tt}</div>
             <div class="footer_div_food">
@@ -134,7 +280,7 @@ function initApp1(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item1');
         newDiv.innerHTML = `
-            <img class="food_img" src="/image/${value.image1}">
+            <div class="div_img_food"><img class="food_img" src="/image/${value.image1}"></div>
             <div class="food_name">${value.name1}</div>
             <div class="food_infor">${value.tt1}</div>
             <div class="footer_div_food">
@@ -151,7 +297,7 @@ function initApp2(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item2');
         newDiv.innerHTML = `
-            <img class="food_img" src="/image/${value.image2}">
+            <div class="div_img_food"><img class="food_img" src="/image/${value.image2}"></div>
             <div class="food_name">${value.name2}</div>
             <div class="food_infor">${value.tt2}</div>
             <div class="footer_div_food">
@@ -163,9 +309,77 @@ function initApp2(){
     })
 }
 
+function initApp3(){
+    products3.forEach((value, key) => {
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('item3');
+        newDiv.innerHTML = `
+            <div class="div_img_food"><img class="food_img" src="/image/${value.image3}"></div>
+            <div class="food_name">${value.name3}</div>
+            <div class="food_infor">${value.tt3}</div>
+            <div class="footer_div_food">
+                <div class="food_price">${value.price3.toLocaleString()}</div>
+                <button id="btn_cart7" onclick="addToCard3(${key})">Add to cart</button>
+            `;
+        list3.appendChild(newDiv);
+    })
+}
+
+function initApp4(){
+    products4.forEach((value, key) => {
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('item4');
+        newDiv.innerHTML = `
+            <div class="div_img_food"><img class="food_img" src="/image/${value.image4}"></div>
+            <div class="food_name">${value.name4}</div>
+            <div class="food_infor">${value.tt4}</div>
+            <div class="footer_div_food">
+                <div class="food_price">${value.price4.toLocaleString()}</div>
+                <button id="btn_cart7" onclick="addToCard4(${key})">Add to cart</button>
+            `;
+        list4.appendChild(newDiv);
+    })
+}
+
+function initApp5(){
+    products5.forEach((value, key) => {
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('item5');
+        newDiv.innerHTML = `
+            <div class="div_img_food"><img class="food_img" src="/image/${value.image5}"></div>
+            <div class="food_name">${value.name5}</div>
+            <div class="food_infor">${value.tt5}</div>
+            <div class="footer_div_food">
+                <div class="food_price">${value.price5.toLocaleString()}</div>
+                <button id="btn_cart7" onclick="addToCard5(${key})">Add to cart</button>
+            `;
+        list5.appendChild(newDiv);
+    })
+}
+
+function initApp6(){
+    products6.forEach((value, key) => {
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('item6');
+        newDiv.innerHTML = `
+            <div class="div_img_food"><img class="food_img" src="/image/${value.image6}"></div>
+            <div class="food_name">${value.name6}</div>
+            <div class="food_infor">${value.tt6}</div>
+            <div class="footer_div_food">
+                <div class="food_price">${value.price6.toLocaleString()}</div>
+                <button id="btn_cart7" onclick="addToCard6(${key})">Add to cart</button>
+            `;
+        list6.appendChild(newDiv);
+    })
+}
+
 initApp();
 initApp1();
 initApp2();
+initApp3();
+initApp4();
+initApp5();
+initApp6();
 
 function addToCard(key){
     if(listCards[key] == null){
@@ -194,6 +408,42 @@ function addToCard2(key){
     reloadCard();
 }
 
+function addToCard3(key){
+    if(listCards3[key] == null){
+        // copy product form list to list card
+        listCards3[key] = JSON.parse(JSON.stringify(products3[key]));
+        listCards3[key].quantity = 1;
+    }
+    reloadCard();
+}
+
+function addToCard4(key){
+    if(listCards4[key] == null){
+        // copy product form list to list card
+        listCards4[key] = JSON.parse(JSON.stringify(products4[key]));
+        listCards4[key].quantity = 1;
+    }
+    reloadCard();
+}
+
+function addToCard5(key){
+    if(listCards5[key] == null){
+        // copy product form list to list card
+        listCards5[key] = JSON.parse(JSON.stringify(products5[key]));
+        listCards5[key].quantity = 1;
+    }
+    reloadCard();
+}
+
+function addToCard6(key){
+    if(listCards6[key] == null){
+        // copy product form list to list card
+        listCards6[key] = JSON.parse(JSON.stringify(products6[key]));
+        listCards6[key].quantity = 1;
+    }
+    reloadCard();
+}
+
 function reloadCard(){
     listCard.innerHTML = '';
     let count = 0;
@@ -205,7 +455,7 @@ function reloadCard(){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
                 <div><img src="/image/${value.image}"/></div>
-                <div>${value.name}</div>
+                <div><p>${value.name}</p></div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>
                     <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
@@ -226,8 +476,8 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="/image/${value.image1}"/></div>
-                <div>${value.name1}</div>
+                <div><img class="img_cart" src="/image/${value.image1}"/></div>
+                <div><p>${value.name1}</p></div>
                 <div>${value.price1.toLocaleString()}</div>
                 <div>
                     <button onclick="changeQuantity1(${key}, ${value.quantity - 1})">-</button>
@@ -248,8 +498,8 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="/image/${value.image2}"/></div>
-                <div>${value.name2}</div>
+                <div><img class="img_cart" src="/image/${value.image2}"/></div>
+                <div><p>${value.name2}</p></div>
                 <div>${value.price2.toLocaleString()}</div>
                 <div>
                     <button onclick="changeQuantity2(${key}, ${value.quantity - 1})">-</button>
@@ -261,6 +511,94 @@ function reloadCard(){
     })
     total.innerText = totalPrice2.toLocaleString();
     quantity.innerText = count2;
+
+    let count3 = count2;
+    let totalPrice3 = totalPrice2;
+    listCards3.forEach((value, key)=>{
+        totalPrice3 = totalPrice3 + value.price3;
+        count3 = count3 + value.quantity;
+        if(value != null){
+            let newDiv = document.createElement('li');
+            newDiv.innerHTML = `
+                <div><img class="img_cart" src="/image/${value.image3}"/></div>
+                <div><p>${value.name3}</p></div>
+                <div>${value.price3.toLocaleString()}</div>
+                <div>
+                    <button onclick="changeQuantity3(${key}, ${value.quantity - 1})">-</button>
+                    <div class="count">${value.quantity}</div>
+                    <button onclick="changeQuantity3(${key}, ${value.quantity + 1})">+</button>
+                </div>`;
+                listCard.appendChild(newDiv);
+        }
+    })
+    total.innerText = totalPrice3.toLocaleString();
+    quantity.innerText = count3;
+
+    let count4 = count3;
+    let totalPrice4 = totalPrice3;
+    listCards4.forEach((value, key)=>{
+        totalPrice4 = totalPrice4 + value.price4;
+        count4 = count4 + value.quantity;
+        if(value != null){
+            let newDiv = document.createElement('li');
+            newDiv.innerHTML = `
+                <div><img class="img_cart" src="/image/${value.image4}"/></div>
+                <div><p>${value.name4}</p></div>
+                <div>${value.price4.toLocaleString()}</div>
+                <div>
+                    <button onclick="changeQuantity4(${key}, ${value.quantity - 1})">-</button>
+                    <div class="count">${value.quantity}</div>
+                    <button onclick="changeQuantity4(${key}, ${value.quantity + 1})">+</button>
+                </div>`;
+                listCard.appendChild(newDiv);
+        }
+    })
+    total.innerText = totalPrice4.toLocaleString();
+    quantity.innerText = count4;
+
+    let count5 = count4;
+    let totalPrice5 = totalPrice4;
+    listCards5.forEach((value, key)=>{
+        totalPrice5 = totalPrice5 + value.price5;
+        count5 = count5 + value.quantity;
+        if(value != null){
+            let newDiv = document.createElement('li');
+            newDiv.innerHTML = `
+                <div><img class="img_cart" src="/image/${value.image5}"/></div>
+                <div><p>${value.name5}</p></div>
+                <div>${value.price5.toLocaleString()}</div>
+                <div>
+                    <button onclick="changeQuantity5(${key}, ${value.quantity - 1})">-</button>
+                    <div class="count">${value.quantity}</div>
+                    <button onclick="changeQuantity5(${key}, ${value.quantity + 1})">+</button>
+                </div>`;
+                listCard.appendChild(newDiv);
+        }
+    })
+    total.innerText = totalPrice5.toLocaleString();
+    quantity.innerText = count5;
+
+    let count6 = count5;
+    let totalPrice6 = totalPrice5;
+    listCards6.forEach((value, key)=>{
+        totalPrice6 = totalPrice6 + value.price6;
+        count6 = count6 + value.quantity;
+        if(value != null){
+            let newDiv = document.createElement('li');
+            newDiv.innerHTML = `
+                <div><img class="img_cart" src="/image/${value.image6}"/></div>
+                <div><p>${value.name6}</p></div>
+                <div>${value.price6.toLocaleString()}</div>
+                <div>
+                    <button onclick="changeQuantity6(${key}, ${value.quantity - 1})">-</button>
+                    <div class="count">${value.quantity}</div>
+                    <button onclick="changeQuantity6(${key}, ${value.quantity + 1})">+</button>
+                </div>`;
+                listCard.appendChild(newDiv);
+        }
+    })
+    total.innerText = totalPrice6.toLocaleString();
+    quantity.innerText = count6;
 
 }
 
@@ -293,6 +631,48 @@ function changeQuantity2(key, quantity){
     }
     reloadCard();
 }
+
+function changeQuantity3(key, quantity){
+    if(quantity == 0){
+        delete listCards3[key];
+    }else{
+        listCards3[key].quantity = quantity;
+        listCards3[key].price3 = quantity * products3[key].price3;
+    }
+    reloadCard();
+}
+
+function changeQuantity4(key, quantity){
+    if(quantity == 0){
+        delete listCards4[key];
+    }else{
+        listCards4[key].quantity = quantity;
+        listCards4[key].price4 = quantity * products4[key].price4;
+    }
+    reloadCard();
+}
+
+function changeQuantity5(key, quantity){
+    if(quantity == 0){
+        delete listCards5[key];
+    }else{
+        listCards5[key].quantity = quantity;
+        listCards5[key].price5 = quantity * products5[key].price5;
+    }
+    reloadCard();
+}
+
+function changeQuantity6(key, quantity){
+    if(quantity == 0){
+        delete listCards6[key];
+    }else{
+        listCards6[key].quantity = quantity;
+        listCards6[key].price6 = quantity * products6[key].price6;
+    }
+    reloadCard();
+}
+
+//phan fixed menu_mini
 window.addEventListener('scroll', function() {
     var menu = document.querySelector('.menu');
     if (window.scrollY >= 707) {
@@ -301,57 +681,6 @@ window.addEventListener('scroll', function() {
         menu.classList.remove('menu_mini');
     }
     });
-//phan banner
-// var arr_hinh = [
-//     "/image/banner0.jpg",
-//     "/image/banner1.jpg",
-//     "/image/banner2.jpg",
-//     "/image/banner4.jpg",
-//     "/image/banner5.jpg",
-//     "/image/banner6.jpg"
-// ]
-
-// var i = 0;
-
-// function next(){
-//     i++;
-//     if(i >= arr_hinh.length)
-//         i = 0;
-//     var hinh = document.getElementById("hinh");
-//     hinh.src = arr_hinh[i];
-// }
-
-// function prev(){
-//     i--;
-//     if(i < 0)
-//         i = arr_hinh.length - 1;
-//     document.getElementById("hinh").src = arr_hinh[i];
-// }
-
-// setInterval("next()", 15000);
-//
-// var movdot = document.querySelectorAll('.moving div')
-// var currentIndex = 0;
-// function updateDot(index){
-
-//     document.querySelectorAll('.moving div').forEach(item =>{
-//         item.classList.remove('active1');
-//     })
-
-//     currentIndex = index;
-//     var hinh = document.getElementById("hinh");
-//     hinh.src = movdot[index].getAttribute('src');
-//     movdot[index].parentElement.classList.add('active1');
-
-// }
-
-// movdot.forEach((imgElement, index) => {
-//     imgElement.addEventListener('click', e => {
-//         updateDot(index);
-//     })
-// })
-
-// updateDot(0);
 
 //Phần banner
 const wrapper = document.querySelector(".banner"),
@@ -384,3 +713,17 @@ const autoSlide = () => {
   
   wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
   wrapper.addEventListener("mouseleave", autoSlide);
+
+//   menu
+const menu_image = document.querySelector(".menu_img");
+const drop_menu_small = document.querySelector(".menu_small");
+
+menu_image.onclick = function() {
+    drop_menu_small.classList.toggle('open_menu_small');
+}
+
+
+window.addEventListener("scroll",function(){
+    var navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("sticky",window.scrollY > 0);
+})

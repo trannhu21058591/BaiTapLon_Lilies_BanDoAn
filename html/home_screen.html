@@ -7,22 +7,40 @@
     <link rel="stylesheet" href="/css/home_screen.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/responsive_footer.css">
     <title>Lilies - Shoot Food</title>
 </head>
 <body class="">
     <div class="container">
-        <div class="menu_main">
-            <div class="header_logo">
-                <img class="logo_img" src="/image/logo.png" alt="">
-                <a href="#">Lilies</a>
-            </div>
-            <div class="menu_main_header">
-                <div><a class="menu_main_home" href="/html/Welcome_screen_VS03.html">Home</a></div>
-                <div><a class="menu_main_menu" href="#">Menu</a></div>
-                <div><a class="menu_main_order" href="#">Order</a></div>
-                <div><a class="menu_main_profile" href="#">Profile</a></div>
+        <!-- menu main -->
+        <div class="navbar">
+            <div class="menu_main">
+                <div class="header_logo">
+                    <img class="logo_img" src="/image/logo.png" alt="">
+                    <a href="#">Lilies</a>
+                </div>
+                <div class="menu_main_header">
+                    <div><a class="menu_main_home" href="/html/Welcome_screen_VS03.html">Home</a></div>
+                    <div><a class="menu_main_menu" href="#">Menu</a></div>
+                    <div><a class="menu_main_order" href="#">Order</a></div>
+                    <div><a class="menu_main_profile" href="#">Profile</a></div>
+                </div>
+                <!--  -->
+                <div class="menu_img"><img src="/image/icons8-menu-rounded-30.png" alt=""></div> 
+                <!--  -->
+                <div class="menu_small">
+                    <ul>
+                        <li class="active"><a href="/html/Welcome_screen_VS03.html">Home</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="#">Order</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="/html/logIn_screen_VS02.html">LogIn / Sign Up</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <!-- phần banner -->
         <div class="banner">
             <div class="banner_img">
                 <div class="hh"><img src="/image/banner0.jpg" alt=""></div>
@@ -41,16 +59,17 @@
                 <i class="fa-solid fa-chevron-right button" id="next"></i>
             </div>
         </div>
+        <!-- phần menu food -->
         <div class="menu menu_mini">
             <a class="menu_text_1 menu_text" href="#l1">Beef Burgers</a>
             <a class="menu_text_2 menu_text" href="#l2">Chicken Burgers</a>
             <a class="menu_text_3 menu_text" href="#l3">Veggie Burgers</a>
-            <a class="menu_text_4 menu_text" href="#">Fries</a>
-            <a class="menu_text_5 menu_text" href="#">Pastas</a>
-            <a class="menu_text_6 menu_text" href="#">Mear balls</a>
-            <a class="menu_text_7 menu_text" href="#">Drinks</a>
+            <a class="menu_text_4 menu_text" href="#l4">Fries</a>
+            <a class="menu_text_5 menu_text" href="#l5">Pastas</a>
+            <a class="menu_text_6 menu_text" href="#l6">Meat balls</a>
+            <a class="menu_text_7 menu_text" href="#l7">Drinks</a>
         </div>
-        
+        <!-- danh sách food -->
         <div id="l1" class="listfood_1">
             <div class="inforfood1">
                 <p class="infor_title1">Beef Burgers</p>
@@ -65,9 +84,9 @@
         </div>
         <div id="l2" class="listfood_2">
 
-            <div class="inforfood1">
+            <div class="inforfood2">
                 <p class="infor_title1">Chicken Burgers</p>
-                <p class="infor_text1">Our signature Wagyu beef burgers are grilled to perfection and served with 100% organic & premium grass-fed beef to give you the juiciest burger-eating experience in town.</p>
+                <p class="infor_text1">A chicken burger is a sandwich made with a chicken patty that is typically grilled or fried, and served on a bun with various toppings and condiments. </p>
                 <p class="infor_text2">Chicken Burgers Catalog</p>
             </div>
             
@@ -78,9 +97,9 @@
         </div>
         <div id="l3" class="listfood_3">
 
-            <div class="inforfood1">
+            <div class="inforfood3">
                 <p class="infor_title1">Veggie Burgers</p>
-                <p class="infor_text1">Our signature Wagyu beef burgers are grilled to perfection and served with 100% organic & premium grass-fed beef to give you the juiciest burger-eating experience in town.</p>
+                <p class="infor_text1">A veggie burger is a sandwich made with a patty that is made from plant-based ingredients, such as vegetables, grains, beans, and soy products.</p>
                 <p class="infor_text2">GF Options Available</p>
             </div>
             
@@ -89,6 +108,63 @@
             </div>
 
         </div>
+        <div id="l4" class="listfood_4">
+
+            <div class="inforfood4">
+                <p class="infor_title1">Fries</p>
+                <p class="infor_text1">Fries, also known as french fries or chips, are a popular side dish made from sliced and fried potatoes.</p>
+                <p class="infor_text2">GF Options Available</p>
+            </div>
+            
+            <div class="list3">
+
+            </div>
+
+        </div>
+
+        <div id="l5" class="listfood_5">
+
+            <div class="inforfood5">
+                <p class="infor_title1">Pastas</p>
+                <p class="infor_text1">Pasta is a staple food made from durum wheat and water, shaped into various forms like spaghetti, penne, or fettuccine.</p>
+                <p class="infor_text2">GF Options Available</p>
+            </div>
+            
+            <div class="list4">
+
+            </div>
+
+        </div>
+
+        <div id="l6" class="listfood_6">
+
+            <div class="inforfood6">
+                <p class="infor_title1">Meat balls</p>
+                <p class="infor_text1">Meatballs are small balls of ground meat, typically made from beef, pork, or a combination of both, mixed with breadcrumbs, eggs, and spices.</p>
+                <p class="infor_text2">GF Options Available</p>
+            </div>
+            
+            <div class="list5">
+
+            </div>
+
+        </div>
+
+        <div id="l7" class="listfood_7">
+
+            <div class="inforfood7">
+                <p class="infor_title1">Drinks</p>
+                <p class="infor_text1">Beverages in fast food restaurants include a variety of drinks such as soda, lemonade, iced tea, and bottled water.</p>
+                <p class="infor_text2">GF Options Available</p>
+            </div>
+            
+            <div class="list6">
+
+            </div>
+
+        </div>
+
+        <!-- Footer-->
         <div class="footer">
             <div class="footer_1">
                 <div class="footer_1_menu">
@@ -124,23 +200,19 @@
             <div class="footer_2">
                 <div class="footer_2_nd1"><p>© 2021 LILIES, All rights reserved</p></div>
                 <div class="footer_2_icon">
-                    
                     <div class="footer_2_icon_1">
-                        <div class="huh"></div>
-                        <span><img src="/image/icons8-instagram-30.png" alt=""></span>
+                        <span><img src="/image/icons8-instagram-50.png" alt=""></span>
                     </div>
                     <div class="footer_2_icon_1">
-                        <div class="huh"></div>
-                        <span><img src="/image/icons8-twitter-30.png" alt=""></span>
+                        <span><img src="/image/icons8-twitter-50 (1).png" alt=""></span>
                     </div>
                     <div class="footer_2_icon_1">
-                        <div class="huh"></div>
-                        <span><img src="/image/icons8-youtube-30.png" alt=""></span>
+                        <span><img src="/image/icons8-youtube-50.png" alt=""></span>
                     </div>
                 </div>
             </div>
         </div>
-        
+        <!--Phần item giỏ hàng-->
         <footer>
             <div></div>
             <div class="shopping">
@@ -149,7 +221,7 @@
             </div>
         </footer>
     </div>
-    
+    <!-- Phần cart -->
     <div class="card">
         <h1>Cart</h1>
         <ul class="listCard">
