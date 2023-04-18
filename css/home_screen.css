@@ -705,6 +705,9 @@ footer .shopping span{
 .list1, .list2, .list4, .list5{
     height: 460px;
 }
+.div_name{
+    justify-content: left;
+}
 /* Laptop */
 @media screen and (max-width: 1024px) {
     .menu_main_header {
