@@ -12,9 +12,21 @@ body{
     margin-top: -1px;
     margin-left: -1px;
 }
-.menu_main_home:hover, .menu_main_menu1:hover, .menu_main_checkout:hover, .menu_main_profile:hover{
+.menu_main_header ul li a {
     text-decoration: none;
-    color: #FFC98B;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+.navbar_ck{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    background: #00302E;
+    transition: .3s;
 }
 .header_logo a:hover{
     text-decoration: none;
@@ -23,7 +35,7 @@ body{
 .menu_main_menu1{
     color: white;
 }
-.menu_main_checkout{
+.menu_main_checkout1{
     color: #FFC98B;
 }
 .checkout_ck{
@@ -37,7 +49,7 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    margin-top: -40px;
+    margin-top: 24px;
 }
 .checkout_ck{
     font-size: 30px;
@@ -85,13 +97,38 @@ body{
 .field{
     margin-top: 15px;
 }
-.col-md-6{
+.select_address{
+    display: flex;
+    width: 93%;
+    justify-content: space-between;
+}
+.form_address{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.city{
+    width: 50%;
+}
+.district{
+    width: 40%;
+}
+.city, .district{
     margin-top: 5px;
 }
-.col-md-7, .col-md-3{
+.hamlet, .street{
     margin-top: 10px;
 }
-.col-md-6 select{
+.hamlet{
+    width: 50%;
+}
+.street{
+    width: 20%;
+    margin-right: 121px;
+}
+.row_address select, .district select{
     border: 1px solid black;
     outline: none;
     width: 70%;
@@ -126,6 +163,7 @@ label {
     -webkit-user-select: none;
     -o-user-select: none;
     user-select: none;
+    font-weight: 500;
 }
 .form-list input.input-text {
     width: 100%;
@@ -188,14 +226,394 @@ textarea{
     background: #ff5744;
     width: 30%;
 }
+.return:hover{
+    background: #ff6857;
+}
+.order:hover{
+    background: rgb(20, 92, 89);
+}
 .order{
     width: 50%;
-    background: rgba(0, 48, 46, 0.75);
+    background: rgb(0, 78, 75);
 }
 .btn_return, .btn_order{
     color: #FFFFFF;
+    text-decoration: none;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .btn_return:hover, .btn_order:hover{
     color: #FFFFFF;
     text-decoration: none;
+    cursor: pointer;
+}
+.footer_1_menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: -1px;
+}
+.footer_2_nd1 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+}
+.title_cart{
+    width: 100%;
+    height: 50px;
+    background: #174d4b;
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.list_cart table{
+    width: 100%;
+
+}
+.list_cart table th {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background: #7fc2c0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.list_cart table td {
+    text-align: center;
+    height: 70px;
+    border-bottom: 1px solid #799795;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.list_cart table td.price_color, .list_cart table td.price_sub, .list_cart table td.price_ship, .list_cart table td.price_grand{
+    color: #7fc2c0;
+}
+.list_cart table td.subtotal, .list_cart table td.price_sub, .list_cart table td.price_ship, .list_cart table td.ship, .list_cart table td.price_grand{
+    border-bottom: none;
+}
+.list_cart table td.subtotal{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0000007d;
+    text-align: left;
+    padding: 10px 9px;
+}
+.list_cart table td.price_sub{
+    font-size: 17px;
+}
+.list_cart table td.ship{
+    font-size: 17px;
+    padding: 1px 9px 53px;
+    color: #0000007d;
+    text-align: left;
+}
+.list_cart table td.price_ship{
+    font-size: 19px;
+    padding: 0px 0px 53px;
+}
+.list_cart table td.coupon{
+    border-bottom: none;
+}
+.discount{
+    display: flex;
+    align-items: center;
+    padding: 1px 11px 28px;
+    border-bottom: none;
+}
+.discount_title{
+    color: #0000007d;
+    font-family: 'Poppins', sans-serif;
+}
+.discount_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78%;
+}
+.btn_coupon{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 41px;
+    background: #38bcb8;
+}
+.btn_coupon a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+.btn_coupon:hover{
+    background: #106b68;
+    cursor: pointer;
+}
+.btn_coupon a:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+input[type=coupon]{
+    height: 41px;
+    padding: 0 8px;
+    border: 1px solid #e1e1e1;
+    width: 95%;
+}
+.list_cart table td.grand_total{
+    border-bottom: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #174d4b;
+    text-align: left;
+    padding: 10px 9px;
+}
+.list_cart table td.price_grand{
+    font-size: 18px;
+    font-weight: bold;
+    color: #299390;
+}
+/* laptop */
+@media screen  and (max-width: 1024px){
+    .btn_return, .btn_order {
+        font-size: 15px;
+    }
+    .street {
+        margin-right: 70px;
+    }
+    .district_1 {
+        margin-left: -40px;
+    }
+}
+
+@media screen and (max-width: 963px){
+    .checkout_infor{
+        flex-direction: column;
+        margin-top: 202px;
+        align-items: center;
+    }
+    .form_ck {
+        width: 84%;
+    }
+    .cart_ck {
+        width: 84%;
+    }
+    .street {
+        margin-right: 90px;
+    }
+    .district_1 {
+        margin-left: -60px;
+    }
+    .checkout_btn {
+        margin-top: 299px;
+    }
+    .field .input-box {
+        margin-bottom: 13px;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 768px){
+    .btn_return, .btn_order {
+        font-size: 13px;
+    }
+            
+    .checkout_ck {
+        font-size: 28px;
+    }
+    .field .input-box {
+        margin-bottom: 13px;
+    }
+}
+@media screen and (max-width: 606px){
+    .btn_return, .btn_order {
+        font-size: 10px;
+    }
+    .title_ck {
+        font-size: 15px;
+    }
+    label {
+        font-size: 11px;
+    }
+    input[type=email], input[type=search], input[type=number], input[type=password], input[type=tel], input[type=text] {
+        height: 31px;
+        width: 94%;
+    }
+    .row_address select, .district select {
+        width: 68%;
+        height: 28px;
+    }
+    input[type=number-home] {
+        height: 31px;
+    }
+    .title_cart {
+        font-size: 18px;
+    }
+    .list_cart table th {
+        height: 37px;
+        font-size: 11px;
+    }
+    .list_cart table td {
+        text-align: center;
+        height: 59px;
+        font-size: 12px;
+    }
+    .list_cart table td.price_sub {
+        font-size: 15px;
+    }
+    .list_cart table td.subtotal {
+        font-size: 16px;
+    }
+    .list_cart table td.ship {
+        font-size: 14px;
+    }
+    .list_cart table td.price_ship {
+        font-size: 15px;
+    }
+    .discount_title {
+        width: 30%;
+    }
+    input[type=coupon] {
+        height: 37px;
+        width: 94%;
+    }
+    .btn_coupon {
+        width: 117px;
+        height: 38px;
+    }
+    .list_cart table td.price_grand {
+        font-size: 16px;
+    }
+    .list_cart table td.grand_total {
+        font-size: 16px;
+    }
+    .return, .order {
+        margin-bottom: 45px;
+        margin-top: -84px;
+    }
+}
+/* mobile */
+@media screen and (max-width: 480px){
+    .btn_return, .btn_order {
+        font-size: 13px;
+    }
+            
+    .checkout_ck {
+        font-size: 28px;
+    }
+    .field .input-box {
+        margin-bottom: 13px;
+    }
+}
+@media screen and (max-width: 480px){
+    .checkout_infor {
+        margin-top: 114px;
+    }
+    .street {
+        margin-right: 59px;
+    }
+    .row_address select, .district select {
+        width: 68%;
+        height: 20px;
+        font-size: 10px;
+    }
+    .select_address {
+        width: 100%;
+    }
+    .btn_return, .btn_order {
+        font-size: 7px;
+    }
+    .title_ck {
+        font-size: 12px;
+    }
+    label {
+        font-size: 8px;
+    }
+    input[type=email], input[type=search], input[type=number], input[type=password], input[type=tel], input[type=text] {
+        height: 28px;
+        width: 94%;
+        font-size: 11px;
+    }
+    .row_address select, .district select {
+        width: 68%;
+        height: 25px;
+        font-size: 11px;
+
+    }
+    input[type=number-home] {
+        height: 28px;
+        font-size: 11px;
+
+    }
+    input[type=coupon] {
+        height: 26px;
+        width: 93%;
+        font-size: 9px;
+    }
+    .btn_coupon {
+        width: 117px;
+        height: 26px;
+    }
+    .btn_coupon a {
+        font-size: 14px;
+    }
+    .input-note {
+        width: 62%;
+        height: 50px;
+        font-size: 11px;
+    }
+    .title_cart {
+        font-size: 15px;
+    }
+    .list_cart table th {
+        height: 34px;
+        font-size: 8px;
+    }
+    .list_cart table td {
+        text-align: center;
+        height: 45px;
+        font-size: 9px;
+    }
+    .list_cart table td.price_sub {
+        font-size: 12px;
+    }
+    .list_cart table td.subtotal {
+        font-size: 13px;
+    }
+    .list_cart table td.ship {
+        font-size: 11px;
+    }
+    .list_cart table td.price_ship {
+        font-size: 14px;
+    }
+    .discount_title {
+        width: 25%;
+    }
+   
+    .list_cart table td.price_grand {
+        font-size: 13px;
+    }
+    .list_cart table td.grand_total {
+        font-size: 13px;
+    }
+    .return, .order {
+        width: 38%;
+        height: 36px;
+        margin-bottom: 45px;
+        margin-top: -84px;
+    }
+    .checkout_btn {
+        margin-top: 225px;
+        margin-bottom: -14px;
+    }
+    
 }

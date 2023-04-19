@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/checkout.css">
     <link rel="stylesheet" href="/css/home_screen.css">
+    <link rel="stylesheet" href="/css/responsive_footer.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -16,27 +17,30 @@
     <div class="container_checkout">
 
         <!-- menu main -->
-        <div class="navbar">
+        <div class="navbar_ck">
             <div class="menu_main">
                 <div class="header_logo">
                     <img class="logo_img" src="/image/logo.png" alt="">
                     <a href="#">Lilies</a>
                 </div>
                 <div class="menu_main_header">
-                    <div><a class="menu_main_home" href="/html/Welcome_screen_VS03.html">Home</a></div>
-                    <div><a class="menu_main_menu1" href="#">Menu</a></div>
-                    <div><a class="menu_main_checkout" href="#">Checkout</a></div>
-                    <div><a class="menu_main_profile" href="#">Profile</a></div>
+                    <ul>
+                        <li><a class="menu_main_home" href="/html/Welcome_screen_VS03.html">Home</a></li>
+                        <li><a class="menu_main_menu" href="/html/home_screen.html">Menu</a></li>
+                        <li class="active"><a class="menu_main_checkout" href="/html/checkout.html">Checkout</a></li>
+                        <li><a class="menu_main_profile" href="#">Profile</a></li>
+                        <li><a class="menu_main_login" href="/html/logIn_screen_VS02.html">LogIn / Sign Up</a></li>
+                    </ul>
                 </div>
                 <!--  -->
                 <div class="menu_img"><img src="/image/icons8-menu-rounded-30.png" alt=""></div> 
                 <!--  -->
                 <div class="menu_small">
                     <ul>
-                        <li class="active"><a href="/html/Welcome_screen_VS03.html">Home</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="#">Order</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/html/Welcome_screen_VS03.html">Home</a></li>
+                        <li><a href="/html/home_screen.html">Menu</a></li>
+                        <li class="active"><a href="/html/checkout.html">Checkout</a></li>
+                        <li><a href="#">Profile</a></li>
                         <li><a href="/html/logIn_screen_VS02.html">LogIn / Sign Up</a></li>
                     </ul>
                 </div>
@@ -58,7 +62,7 @@
                                 Last Name
                             </label>
                             <div class="input-box">
-                                <input type="text" id="billing:last_name" name="billing[last_name]" value="" title="Tên" maxlength="255" class="input-text">
+                                <input type="text" id="billing:last_name" name="billing[last_name]" value="" title="Last Name" maxlength="255" class="input-text">
                             </div>
                         </div>
                         <div class="field first_name">
@@ -66,7 +70,7 @@
                                 First Name
                             </label>
                             <div class="input-box">
-                                <input type="text" id="billing:firstname" name="billing[firstname]" value="" title="Tên" maxlength="255" class="input-text required-entry valid">
+                                <input type="text" id="billing:firstname" name="billing[firstname]" value="" title="First Name" maxlength="255" class="input-text required-entry valid">
                             </div>
                         </div>
                         <div class="field email">
@@ -74,7 +78,7 @@
                                 Email
                             </label>
                             <div class="input-box">
-                                <input type="email" id="billing:email" name="billing[email]" value="" title="Tên" maxlength="255" class="input-text">
+                                <input type="email" id="billing:email" name="billing[email]" value="" title="Email" maxlength="255" class="input-text">
                             </div>
                         </div>
                         <div class="field phone">
@@ -82,7 +86,7 @@
                                 Phone
                             </label>
                             <div class="input-box">
-                                <input type="text" id="billing:phone" name="billing[phone]" value="" title="Tên" maxlength="255" class="input-text">
+                                <input type="text" id="billing:phone" name="billing[phone]" value="" title="Phone" maxlength="255" class="input-text">
                             </div>
                         </div>
                         <div class="field address">
@@ -90,22 +94,26 @@
                                 Address
                             </label>
     
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <select name="calc_shipping_provinces" required="">
-                                        <option value="">Province/ City</option>
-                                      </select>
+                            <div class="row_address">
+                                <div class="select_address">
+                                    <div class="city">
+                                        <select name="calc_shipping_provinces" required="">
+                                            <option value="">Province/ City</option>
+                                          </select>
+                                    </div>
+                                    <div class="district">
+                                        <select class="district_1" name="calc_shipping_district" required="">
+                                            <option value="">District</option>
+                                          </select>
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <select class="district_1" name="calc_shipping_district" required="">
-                                        <option value="">District</option>
-                                      </select>
-                                </div>
-                                <div class="col-md-7">
-                                    <input  name="billing[street_customer]" id="billing:street_customer" type="text" placeholder="Please enter the commune/hamlet" class="input-text">
-                                </div>
-                                <div class="col-md-3">
-                                    <input  name="billing[house_number]" id="billing:house_number" type="number-home" placeholder="Please enter street name" class="input-text">
+                                <div class="form_address">
+                                    <div class="hamlet">
+                                        <input  name="billing[hamlet]" id="billing:hamlet" type="text" placeholder="Please enter the commune/hamlet" class="input-text">
+                                    </div>
+                                    <div class="street">
+                                        <input  name="billing[street_customer]" id="billing:street_customer" type="number-home" placeholder="Please enter street name" class="input-text">
+                                    </div>
                                 </div>
                                 
     
@@ -121,11 +129,68 @@
                         </div>
                     </div>
                 </div>
-                <div class="cart_ck"></div>
+                <div class="cart_ck">
+                    <div class="title_cart">REVIEW ORDER</div>
+                    <div class="list_cart">
+                        <table>
+                            <tr>
+                                <th colspan="2">Product Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Bacon Cheeseburger</td>
+                                <td class="price_color">88.000</td>
+                                <td>2</td>
+                                <td class="price_color">176.000</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Sweet Potato Fries</td>
+                                <td class="price_color">71.000</td>
+                                <td>1</td>
+                                <td class="price_color">71.000</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Mineral Water</td>
+                                <td class="price_color">15.000</td>
+                                <td>4</td>
+                                <td class="price_color">60.000</td>
+                            </tr>
+                            <tr>
+                                <td class="subtotal" colspan="4">Subtotal</td>
+                                <td class="price_sub">307.000</td>
+                            </tr>
+                            <tr>
+                                <td class="ship" colspan="4">Shipping & Handling (Delivery)</td>
+                                <td class="price_ship">17.000</td>
+                            </tr>
+                            <tr>
+                                <td class="coupon" colspan="7">
+                                    <div class="discount">
+                                        <div class="discount_title">Coupon Code</div>
+                                        <div class="discount_form">
+                                            <div class="input_coupon">
+                                                <input  type="coupon" name="Coupon Code" id="coupon_code" placeholder="Enter Coupon Code">
+                                            </div>
+                                            <div class="btn_coupon">
+                                                <a href="#">Apply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="grand_total" colspan="4">Grand Total</td>
+                                <td class="price_grand">307.000</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
             <div class="checkout_btn">
                 <div class="return">
-                    <a class="btn_return" href="#">Return</a>
+                    <a class="btn_return" href="/html/home_screen.html">Return</a>
                 </div>
                 <div class="order">
                     <a class="btn_order" href="#">Place Order</a>

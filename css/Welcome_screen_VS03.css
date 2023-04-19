@@ -53,13 +53,14 @@ body{
     background-color: #001d1c;
 }
 .sticky .header{
-    margin: 10px 140px;
+    margin: 10px 60px;
 }
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 30px 140px;
+    margin: 30px 60px;
     align-items: center;
+    width: 92%;
 }
 .logo{
     display: flex;
@@ -83,7 +84,7 @@ body{
 .menu ul li a{
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 

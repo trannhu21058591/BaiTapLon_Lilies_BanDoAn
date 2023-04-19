@@ -476,10 +476,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image1}"/></div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image1}"/></div>
                 <div class="div_name"><p>${value.name1}</p></div>
-                <div>${value.price1.toLocaleString()}</div>
-                <div>
+                <div class='div_price'>${value.price1.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity1(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity1(${key}, ${value.quantity + 1})">+</button>
@@ -498,10 +498,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image2}"/></div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image2}"/></div>
                 <div class="div_name"><p>${value.name2}</p></div>
-                <div>${value.price2.toLocaleString()}</div>
-                <div>
+                <div class='div_price'>${value.price2.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity2(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity2(${key}, ${value.quantity + 1})">+</button>
@@ -520,10 +520,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image3}"/></div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image3}"/></div>
                 <div class="div_name"><p>${value.name3}</p></div>
-                <div>${value.price3.toLocaleString()}</div>
-                <div>
+                <div class='div_price'>${value.price3.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity3(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity3(${key}, ${value.quantity + 1})">+</button>
@@ -542,10 +542,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image4}"/></div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image4}"/></div>
                 <div class="div_name"><p>${value.name4}</p></div>
-                <div>${value.price4.toLocaleString()}</div>
-                <div>
+                <div class='div_price'>${value.price4.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity4(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity4(${key}, ${value.quantity + 1})">+</button>
@@ -564,10 +564,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image5}"/></div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image5}"/></div>
                 <div class="div_name"><p>${value.name5}</p></div>
-                <div>${value.price5.toLocaleString()}</div>
-                <div>
+                <div class='div_price'>${value.price5.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity5(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity5(${key}, ${value.quantity + 1})">+</button>
@@ -586,10 +586,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image6}"/></div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image6}"/></div>
                 <div class="div_name"><p>${value.name6}</p></div>
-                <div>${value.price6.toLocaleString()}</div>
-                <div>
+                <div class='div_price'>${value.price6.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity6(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity6(${key}, ${value.quantity + 1})">+</button>
