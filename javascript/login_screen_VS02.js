@@ -18,6 +18,16 @@ const regex_Email = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const regex_PassWord = /^[a-zA-Z0-9._%+-@]+$/;
 const regex_Name = /^[^\d+]*[\d+]{0}[^\d+]*$/;
 
+/* 
+var log_in = document.querySelector(".submit_btn");
+log_in.addEventListener("submit",function(event){
+    
+
+
+    window.location.href = "/html/home_screen.html"
+});
+*/
+
 function login(){
     var email = arr[0].value;
     var password = arr[1].value;
@@ -36,6 +46,8 @@ function login(){
     }
 
     console.log(email,password);
+    
+
 };
 
 function sign_up(){
