@@ -19,6 +19,12 @@ body{
     font-family: 'Poppins';
     font-weight: 300;
 }
+.menu_small ul li a.a_ck {
+    text-decoration: none;
+    color: #00302E;
+    font-size: 25px;
+    font-weight: bold;
+}
 .navbar_ck{
     position: absolute;
     top: 0;
