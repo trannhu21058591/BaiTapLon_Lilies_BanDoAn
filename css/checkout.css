@@ -512,7 +512,12 @@ input[type=coupon]{
     .btn_return, .btn_order {
         font-size: 13px;
     }
-            
+    .form_ck {
+        width: 110%;
+    }
+    .cart_ck {
+        width: 110%;
+    }       
     .checkout_ck {
         font-size: 28px;
     }
@@ -522,7 +527,7 @@ input[type=coupon]{
 }
 @media screen and (max-width: 480px){
     .checkout_infor {
-        margin-top: 114px;
+        margin-top: 89px;
     }
     .street {
         margin-right: 59px;
@@ -611,15 +616,55 @@ input[type=coupon]{
     .list_cart table td.grand_total {
         font-size: 13px;
     }
-    .return, .order {
-        width: 38%;
-        height: 36px;
-        margin-bottom: 45px;
-        margin-top: -84px;
-    }
     .checkout_btn {
+        width: 37%;
         margin-top: 225px;
         margin-bottom: -14px;
     }
+    .return, .order {
+        width: 45%;
+        height: 33px;
+        margin-bottom: 45px;
+        margin-top: -84px;
+    }
     
+}
+@media screen and (max-width: 376px){
+    .form_ck {
+        width: 110%;
+    }
+    .cart_ck {
+        width: 110%;
+    }
+    .row_address select, .district select {
+        font-size: 9px;
+    }
+    input[type=email], input[type=search], input[type=number], input[type=password], input[type=tel], input[type=text] {
+        font-size:  9px;
+    }
+    input[type=number-home] {
+        font-size: 9px;
+    }
+    .input-note {
+        font-size: 9px;
+    }
+    .list_cart table th {
+        height: 32px;
+        font-size: 7px;
+    }
+    .list_cart table td.subtotal, .list_cart table td.ship {
+        font-size: 11px;
+    }
+    .list_cart table td.price_sub {
+        font-size: 11px;
+    }
+    .list_cart table td.price_ship {
+        font-size: 10px;
+    }
+    .checkout_infor {
+        margin-top: 93px;
+    }
+    .checkout_ck {
+        font-size: 26px;
+    }
 }
