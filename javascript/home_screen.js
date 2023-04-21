@@ -91,14 +91,14 @@ let products1 = [
 let products2 = [
     {
         id: 7,
-        name2: 'Mushroom Veggie Burger',
+        name2: 'Mushroom Burger',
         image2: 'burger3.1.jpg',
         tt2: 'A vegetarian burger patty made with mushrooms as the main ingredient.',
         price2: 50000
     },
     {
         id: 8,
-        name2: 'Black Bean Veggie Burger',
+        name2: 'Black Bean Burger',
         image2: 'burger3.2.jpg',
         tt2: 'A vegetarian burger patty made with black beans as the main ingredient.',
         price2: 59000
@@ -124,7 +124,7 @@ let products3 = [
         id3: 2,
         name3: 'Curly Fries',
         image3: 'fries1.2.jpg',
-        tt3: 'Similar to French fries, but with a twisted or curly shape. They are often seasoned with spices such as paprika.',
+        tt3: 'Similar to French fries, but with a twisted or curly shape.',
         price3: 50000
     },
     {
@@ -145,7 +145,7 @@ let products3 = [
         id3: 5,
         name3: 'Chili Cheese Fries',
         image3: 'fries1.5.jpg',
-        tt3: 'French fries topped with chili and melted cheese. This hearty snack is often served at sports events or as a bar food.',
+        tt3: 'French fries topped with chili and melted cheese. This hearty snack is often served at sports.',
         price3: 99000
     },
     {
@@ -176,7 +176,7 @@ let products4 = [
         id: 12,
         name4: 'Linguine',
         image4: 'spa1.3.jpg',
-        tt4: ' A narrow, flat pasta that is similar to spaghetti but wider. It is typically served with seafood or tomato-based sauces.',
+        tt4: ' A narrow, flat pasta that is similar to spaghetti but wider. It is typically served with seafood.',
         price4: 100000
     }
 ];
@@ -186,14 +186,14 @@ let products5 = [
         id: 13,
         name5: 'Italian Meatballs',
         image5: 'mb1.1.jpg',
-        tt5: 'These meatballs are typically made from a mixture of ground beef, pork, and veal, along with breadcrumbs, Parmesan cheese, and various herbs and spices.',
+        tt5: 'These meatballs are typically made from a mixture of ground beef, pork, and veal, along with breadcrumbs.',
         price5: 150000
     },
     {
         id: 14,
         name5: 'Swedish Meatballs',
         image5: 'mb1.2.jpg',
-        tt5: 'These meatballs are usually made with a mixture of ground pork and beef, along with breadcrumbs, milk, and spices.',
+        tt5: 'These meatballs are usually made with a mixture of ground pork and beef, along with breadcrumbs, milk.',
         price5: 119000
     },
     {
@@ -455,7 +455,7 @@ function reloadCard(){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
                 <div><img src="/image/${value.image}"/></div>
-                <div><p>${value.name}</p></div>
+                <div class="div_name"><p>${value.name}</p></div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>
                     <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
@@ -476,10 +476,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image1}"/></div>
-                <div><p>${value.name1}</p></div>
-                <div>${value.price1.toLocaleString()}</div>
-                <div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image1}"/></div>
+                <div class="div_name"><p>${value.name1}</p></div>
+                <div class='div_price'>${value.price1.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity1(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity1(${key}, ${value.quantity + 1})">+</button>
@@ -498,10 +498,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image2}"/></div>
-                <div><p>${value.name2}</p></div>
-                <div>${value.price2.toLocaleString()}</div>
-                <div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image2}"/></div>
+                <div class="div_name"><p>${value.name2}</p></div>
+                <div class='div_price'>${value.price2.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity2(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity2(${key}, ${value.quantity + 1})">+</button>
@@ -520,10 +520,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image3}"/></div>
-                <div><p>${value.name3}</p></div>
-                <div>${value.price3.toLocaleString()}</div>
-                <div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image3}"/></div>
+                <div class="div_name"><p>${value.name3}</p></div>
+                <div class='div_price'>${value.price3.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity3(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity3(${key}, ${value.quantity + 1})">+</button>
@@ -542,10 +542,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image4}"/></div>
-                <div><p>${value.name4}</p></div>
-                <div>${value.price4.toLocaleString()}</div>
-                <div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image4}"/></div>
+                <div class="div_name"><p>${value.name4}</p></div>
+                <div class='div_price'>${value.price4.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity4(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity4(${key}, ${value.quantity + 1})">+</button>
@@ -564,10 +564,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image5}"/></div>
-                <div><p>${value.name5}</p></div>
-                <div>${value.price5.toLocaleString()}</div>
-                <div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image5}"/></div>
+                <div class="div_name"><p>${value.name5}</p></div>
+                <div class='div_price'>${value.price5.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity5(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity5(${key}, ${value.quantity + 1})">+</button>
@@ -586,10 +586,10 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img class="img_cart" src="/image/${value.image6}"/></div>
-                <div><p>${value.name6}</p></div>
-                <div>${value.price6.toLocaleString()}</div>
-                <div>
+                <div class='div_img'><img class="img_cart" src="/image/${value.image6}"/></div>
+                <div class="div_name"><p>${value.name6}</p></div>
+                <div class='div_price'>${value.price6.toLocaleString()}</div>
+                <div class='div_quantity'>
                     <button onclick="changeQuantity6(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
                     <button onclick="changeQuantity6(${key}, ${value.quantity + 1})">+</button>
@@ -675,7 +675,7 @@ function changeQuantity6(key, quantity){
 //phan fixed menu_mini
 window.addEventListener('scroll', function() {
     var menu = document.querySelector('.menu');
-    if (window.scrollY >= 707) {
+    if (window.scrollY >= 607) {
         menu.classList.add('menu_mini');
     } else {
         menu.classList.remove('menu_mini');

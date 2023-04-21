@@ -21,20 +21,23 @@
                     <a href="#">Lilies</a>
                 </div>
                 <div class="menu_main_header">
-                    <div><a class="menu_main_home" href="/html/Welcome_screen_VS03.html">Home</a></div>
-                    <div><a class="menu_main_menu" href="#">Menu</a></div>
-                    <div><a class="menu_main_order" href="#">Order</a></div>
-                    <div><a class="menu_main_profile" href="#">Profile</a></div>
+                    <ul>
+                        <li><a class="menu_main_home" href="/html/Welcome_screen_VS03.html">Home</a></li>
+                        <li class="active"><a class="menu_main_menu" href="/html/home_screen.html">Menu</a></li>
+                        <li><a class="menu_main_checkout" href="/html/checkout.html">Checkout</a></li>
+                        <li><a class="menu_main_profile" href="#">Profile</a></li>
+                        <li><a class="menu_main_login" href="/html/logIn_screen_VS02.html">LogIn / Sign Up</a></li>
+                    </ul>
                 </div>
                 <!--  -->
                 <div class="menu_img"><img src="/image/icons8-menu-rounded-30.png" alt=""></div> 
                 <!--  -->
                 <div class="menu_small">
                     <ul>
-                        <li class="active"><a href="/html/Welcome_screen_VS03.html">Home</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="#">Order</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/html/Welcome_screen_VS03.html">Home</a></li>
+                        <li class="active"><a href="/html/home_screen.html">Menu</a></li>
+                        <li><a href="/html/checkout.html">Checkout</a></li>
+                        <li><a href="#">Profile</a></li>
                         <li><a href="/html/logIn_screen_VS02.html">LogIn / Sign Up</a></li>
                     </ul>
                 </div>
@@ -221,6 +224,7 @@
             </div>
         </footer>
     </div>
+
     <!-- Phần cart -->
     <div class="card">
         <h1>Cart</h1>
@@ -228,7 +232,7 @@
 
         </ul>
         <div class="checkOut">
-            <div class="total">0</div>
+            <a href="/html/checkout.html" class="total">0</a>
             <div class="closeShopping">Close</div>
         </div>
     </div>
