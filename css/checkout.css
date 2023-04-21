@@ -7,6 +7,8 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background: url("/image/hinhnen.jpg");
+    background-size: cover;
 }
 .menu_main{
     margin-top: -1px;
@@ -20,10 +22,7 @@ body{
     font-weight: 300;
 }
 .menu_small ul li a.a_ck {
-    text-decoration: none;
     color: #00302E;
-    font-size: 25px;
-    font-weight: bold;
 }
 .navbar_ck{
     position: absolute;
@@ -61,7 +60,7 @@ body{
     font-size: 30px;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
-    color: rgba(0, 48, 46, 0.75);
+    color: rgba(0, 48, 46);
 }
 .checkout_infor{
     width: 92%;
@@ -73,16 +72,18 @@ body{
 }
 .form_ck{
     width: 55%;
-    border: 1px solid rgba(0, 48, 46, 0.75);
-    
 }
 .cart_ck{
-    width: 40%;
-    border: 1px solid rgba(0, 48, 46, 0.75);
+    width: 40%; 
 }
 .form_ck, .cart_ck{
     margin-top: 28px;
     margin-bottom: 20px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 5px 10px 18px #888888;
+    border: 2px dotted rgba(0, 48, 46, 0.75);
+    outline: none;
 }
 .title_ck, .infor_ck{
     margin-left: 20px;
@@ -93,6 +94,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: rgba(0, 48, 46, 0.75);
+    text-align: center;
 }
 .container_checkout{
     display: flex;
@@ -246,10 +248,14 @@ textarea{
     color: #FFFFFF;
     text-decoration: none;
 }
-a {
+a{
     color: #FFFFFF;
     text-decoration: none;
 }
+.apply:focus, .btn_order:focus, .btn_return:focus{
+    color: #fff; 
+    text-decoration: none;
+  }
 .btn_return:hover, .btn_order:hover{
     color: #FFFFFF;
     text-decoration: none;
@@ -272,6 +278,7 @@ a {
 .title_cart{
     width: 100%;
     height: 50px;
+    border-radius: 25px 25px 0 0;
     background: #174d4b;
     display: flex;
     color: #FFFFFF;
@@ -314,18 +321,25 @@ a {
     text-align: left;
     padding: 10px 9px;
 }
-.list_cart table td.price_sub{
+.list_cart table td.price_sub {
     font-size: 17px;
+    padding: 0px 7px 0px 0px;
+}
+.list_cart table td.price_ship {
+    font-size: 19px;
+    padding: 0px 23px 53px;
+}
+.list_cart table td.price_grand {
+    font-size: 18px;
+    font-weight: bold;
+    color: #299390;
+    padding: 0px 10px;
 }
 .list_cart table td.ship{
     font-size: 17px;
     padding: 1px 9px 53px;
     color: #0000007d;
     text-align: left;
-}
-.list_cart table td.price_ship{
-    font-size: 19px;
-    padding: 0px 0px 53px;
 }
 .list_cart table td.coupon{
     border-bottom: none;
@@ -383,11 +397,6 @@ input[type=coupon]{
     text-align: left;
     padding: 10px 9px;
 }
-.list_cart table td.price_grand{
-    font-size: 18px;
-    font-weight: bold;
-    color: #299390;
-}
 /* laptop */
 @media screen  and (max-width: 1024px){
     .btn_return, .btn_order {
@@ -398,6 +407,33 @@ input[type=coupon]{
     }
     .district_1 {
         margin-left: -40px;
+    }
+    .list_cart table td{
+        font-size: 10px;
+    }
+    .list_cart table th {
+        font-size: 10px;
+    }
+    .list_cart table td.subtotal {
+        font-size: 17px;
+    }
+    .list_cart table td.price_sub, .btn_coupon a {
+        font-size: 15px;
+    }
+    .btn_coupon, input[type=coupon] {
+        height: 33px;
+    }
+    .discount_form {
+        width: 75%;
+    }
+    .list_cart table td.price_ship {
+        font-size: 16px;
+    }
+    .list_cart table td.ship {
+        font-size: 13px;
+    }
+    .list_cart table td.grand_total, .list_cart table td.price_grand {
+        font-size: 16px;
     }
 }
 
@@ -528,6 +564,13 @@ input[type=coupon]{
 @media screen and (max-width: 480px){
     .checkout_infor {
         margin-top: 89px;
+    }
+    .checkout_ck{
+        width: 67%;
+        color: rgb(28 93 90);
+        text-align: center;
+        background: rgba(0, 48, 46, 0.2);
+        border-radius: 50px;
     }
     .street {
         margin-right: 59px;
