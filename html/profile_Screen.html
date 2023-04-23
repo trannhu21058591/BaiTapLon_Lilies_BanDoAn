@@ -5,35 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/profile_Screen.css">
+    <link rel="stylesheet" href="/css/Welcome_screen_VS03.css">
     <link rel="shortcut icon" href="/image/logo.png" type="image/png">
     <title>Profile</title>
 </head>
 <body>
     <div class="container">
         <!-- Navbar -->
-        <div class="navbar">
-            <div class="header">
-                <div class="logo">
+        <div class="navbar_">
+            <div class="header_">
+                <div class="logo_">
                     <img src="/image/logo.png" alt="">
                     <p>Lilies</p>
                 </div>
-                <div class="menu">
+                <div class="menu_">
                     <ul>
                         <li><a href="/html/Welcome_screen_VS03.html">Home</a></li>
                         <li><a href="/html/home_screen.html">Menu</a></li>
-                        <li><a href="#">Order</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li class="active"><a>Profile</a></li>
+                        <li><a href="/html/checkout.html">Checkout</a></li>
+                        <li class="active_"><a href="#">Profile</a></li>
+                        <li><a href="/html/logIn_screen_VS02.html">Login / Signup</a></li>
                     </ul>
                 </div>
-                <div class="menu_img"><img src="/image/icons8-menu-rounded-30.png" alt=""></div> 
-                <div class="menu_small">
+                <div class="menu_img_"><img src="/image/icons8-menu-rounded-30.png" alt=""></div> 
+                <div class="menu_small_">
                     <ul>
                         <li><a href="/html/Welcome_screen_VS03.html">Home</a></li>
                         <li><a href="/html/home_screen.html">Menu</a></li>
-                        <li><a href="#">Order</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li class="active"><a>Profile</a></li>
+                        <li><a href="/html/checkout.html">Checkout</a></li>
+                        <li class="active_"><a href="#">Profile</a></li>
+                        <li><a href="/html/logIn_screen_VS02.html">Login / Signup</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +43,102 @@
         <!-- Form profile -->
 
         <div class="profile">
-            1
+            
+            <div class="information_phone">
+                <!-- Account imformation -->
+                <div class="account">
+                    <h3>Account Information</h3>
+                    <div class="details">
+                        <div class="img_avt"><img src="/image/icons8-male-user-100.png" alt=""></div>
+                        <div class="input_infor">
+                            <p>Name</p>
+                            <input type="text" name="" id="" placeholder="Your name">
+                        </div>
+                        <div class="input_infor">
+                            <p>NickName</p>
+                            <input type="text" name="" id="" placeholder="Your Nickname">
+                        </div>
+                        <div class="input_infor">
+                            <p>Gender</p>
+                            <div class="div_radio">
+                                <input type="radio" name="1" id="" >
+                                <p class="check">Male</p>
+                            </div>
+                            <div class="div_radio">
+                                <input type="radio" name="1" id="" >
+                                <p class="check">Female</p>
+                            </div>
+                            <div class="div_radio">
+                                <input type="radio" name="1" id="" >
+                                <p class="check">Different</p>
+                            </div>
+                        </div>
+                        <div class="input_infor">
+                            <p>Address</p>
+                            <input type="text" name="" id="" placeholder="Your address">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="line"></div>
+
+                <!-- Phone number and Email -->
+                <div class="phone">
+                    <h3>Phone number and Email</h3>
+                    <div class="phone_email">
+                        <div class="images_">
+                            <img src="/image/icons8-phone-30.png" alt="">
+                            <p>093 765 6xxx</p>
+                        </div>
+                        <button>Update</button>
+                    </div>
+                    <div class="phone_email">
+                        <div class="images_">
+                            <img src="/image/icons8-envelope-30.png" alt="">
+                            <p>xxxxx@gmail.com</p>
+                        </div>
+                        <button>Update</button>
+                    </div>
+                    <h3>Security</h3>
+                    <div class="phone_email">
+                        <div class="images_">
+                            <img src="/image/icons8-lock-30.png" alt="">
+                            <p>Password</p>
+                        </div>
+                        <button>Update</button>
+                    </div>
+                    <div class="phone_email">
+                        <div class="images_">
+                            <img src="/image/icons8-security-shield-green-30.png" alt="">
+                            <p>Pin</p>
+                        </div>
+                        <button>Update</button>
+                    </div>
+                    <h3>Social network link</h3>
+                    <div class="phone_email">
+                        <div class="images_">
+                            <img class="fix-icon-30" src="/image/google_color.png" alt="">
+                            <p>Google</p>
+                        </div>
+                        <button>Link</button>
+                    </div>
+                    <div class="phone_email">
+                        <div class="images_">
+                            <img class="fix-icon-30" src="/image/facebook_color.png" alt="">
+                            <p>Facebook</p>
+                        </div>
+                        <button>Link</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="btn_">
+                <p>Logout</p>
+                <div class="btn_s_c">
+                    <button class="canel">Canel</button>
+                    <button class="save">Save</button>
+                </div>
+            </div>
         </div>
 
 
@@ -96,6 +192,7 @@
         </div>
     </div>
 
+    
     <script src="/javascript/profile_screen.js"></script>
 </body>
 </html>
