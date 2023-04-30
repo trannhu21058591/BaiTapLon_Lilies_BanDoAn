@@ -28,6 +28,7 @@ log_in.addEventListener("submit",function(event){
 });
 */
 
+
 function login(){
     var email = arr[0].value;
     var password = arr[1].value;
@@ -49,6 +50,7 @@ function login(){
     
 
 };
+
 
 function sign_up(){
     var name = arr[2].value;

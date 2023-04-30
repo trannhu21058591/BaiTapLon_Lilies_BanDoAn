@@ -461,4 +461,74 @@ h3{
         font-size: 12px;
         border-radius: 5px;
     }
+    .menu_small_ ul li a{
+        font-size: 16px;
+    }
+    .open_menu_small_ {
+        height: 309px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .menu_small_ ul li {
+        margin-bottom: 10px;
+    }
+    .menu_small_ ul li a{
+        font-size: 11px;
+    }
+    .open_menu_small_ {
+        height: 229px;
+    }
+    .logo_ p {
+        font-size: 18.5px;
+        margin-left: 5px;
+    }
+    .logo_ img {
+        width: 25px;
+    }
+    .input_infor input[type='text'] {
+        height: 20px;
+        font-size: 8px;
+        width: 65%;
+    }
+    p {
+        font-size: 8px;
+    }
+    .input_infor {
+        margin-bottom: 20px;
+    }
+    .line {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .phone_email {
+        margin-bottom: 15px;
+    }
+    .images_ img {
+        width: 20px;
+    }
+    .phone h3 {
+        margin-bottom: 15px;
+    }
+    .phone_email button {
+        font-size: 8px;
+        width: 50px;
+        height: 20px;
+    }
+    .btn_ {
+        margin-top: 50px;
+    }
+    .btn_s_c button {
+        height: 20px;
+        width: 50px;
+        font-size: 8px;
+    }
+    .img_avt img {
+        width: 70px;
+    }
+    
+    .img_avt img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
