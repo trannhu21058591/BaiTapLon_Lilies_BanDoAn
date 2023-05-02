@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login_screen_VS03.css">
+    <title>Login</title>
+    <link rel="shortcut icon" href="/image/logo.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <div class="form">
+                <!-- lựa chọn form -->
+                <div class="choice">
+                    <div id="choice_space"></div>
+                    <button class="toggle_btn" onclick="login_click()">Login</button>
+                    <button class="toggle_btn" onclick="register_click()">Sign up</button>
+                </div>
+
+                <!-- from login -->
+                <div class="Form_Choice" id="Login_Form">
+                    <h3>Welcome Back!</h3>
+                    <input type="email" name="" id="" placeholder="Enter your email">
+                    <input type="password" name="" id="" placeholder="Enter your password">
+                    <button id="login_btn">Login</button>
+                    <a href="#">Forgot passwordt</a>
+                    <p class="or">Or</p>
+                    <div class="link_social">
+                        <img src="/image/facebook_color.png" alt="">
+                        <p>Login with Facebook</p>
+                    </div>
+                    <div class="link_social">
+                        <img src="/image/twitter_color.png" alt="">
+                        <p>Login with Twitter</p>
+                    </div>
+                    <div class="link_social">
+                        <img src="/image/google_color.png" alt="">
+                        <p>Login with Google</p>
+                    </div>
+                </div>
+                <!-- from signup -->
+                <div class="Form_Choice" id="SignUp_Form">
+                    <h3>Welcome</h3>
+                    <input type="email" name="" id="" placeholder="Enter your email">
+                    <input type="password" name="" id="" placeholder="Enter your password">
+                    <input type="password" name="" id="" placeholder="Confirm password">
+                    <button id="sigup_btn">sign up</button>
+                    <a href="#">Forgot passwordt</a>
+                    <p class="or">Or</p>
+                    <div class="link_social">
+                        <img src="/image/facebook_color.png" alt="">
+                        <p>Login with Facebook</p>
+                    </div>
+                    <div class="link_social">
+                        <img src="/image/twitter_color.png" alt="">
+                        <p>Login with Twitter</p>
+                    </div>
+                    <div class="link_social">
+                        <img src="/image/google_color.png" alt="">
+                        <p>Login with Google</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="/javascript/login_screen_VS03.js"></script>
+</body>
+</html>
