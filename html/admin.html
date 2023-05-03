@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin.css">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="/image/logo.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu -->
+        <div class="menu">
+            <div class="logo" id="logo_n">
+                <img src="/image/logo.png" alt="">
+                <p>Lilies</p>
+            </div>
+            <div class="menu_choice">
+                <div class="menu_item">
+                    <img src="/image/icons8-dashboard-layout-30.png" alt="icon">
+                    <a href="#">Dashboard</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-package-30.png" alt="icon">
+                    <a href="#">Products</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-in-inventory-30.png" alt="icon">
+                    <a href="#">Inventory</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-add-shopping-cart-30.png" alt="icon">
+                    <a href="#">Purchase Orders</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-trolley-30.png" alt="icon">
+                    <a href="#">Sales Orders</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-combo-chart-30.png" alt="icon">
+                    <a href="#">Reports</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-settings-30.png" alt="icon">
+                    <a href="#">Settings</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu_small_list">
+            <div class="logo">
+                <img src="/image/logo.png" alt="">
+                <p>Lilies</p>
+            </div>
+            <div class="menu_choice">
+                <div class="menu_item">
+                    <img src="/image/icons8-dashboard-layout-30.png" alt="icon">
+                    <a href="#">Dashboard</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-package-30.png" alt="icon">
+                    <a href="#">Products</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-in-inventory-30.png" alt="icon">
+                    <a href="#">Inventory</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-add-shopping-cart-30.png" alt="icon">
+                    <a href="#">Purchase Orders</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-trolley-30.png" alt="icon">
+                    <a href="#">Sales Orders</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-combo-chart-30.png" alt="icon">
+                    <a href="#">Reports</a>
+                </div>
+                <div class="menu_item">
+                    <img src="/image/icons8-settings-30.png" alt="icon">
+                    <a href="#">Settings</a>
+                </div>
+            </div>
+        </div>
+        <!-- center -->
+        <div class="center">
+            <!-- search -->
+            <div class="header">
+                <div class="menu_small"><img src="/image/icons8-menu-30(1).png" alt=""></div>
+                <div class="search_ip">
+                    <input type="text" name="" id="" placeholder="Search....">
+                    <img src="/image/icons8-search-40.png" alt="icon">
+                </div>
+                <div class="three_icon">
+                    <img src="/image/icons8-envelope-30.png" alt="icon1">
+                    <img src="/image/icons8-notification-30.png" alt="icon2">
+                    <img src="/image/icons8-male-user-100.png" alt="icon3">
+                </div>
+            </div>
+
+            <h2>DASHBOARD</h2>
+            <!-- danh mục -->
+            <div class="list">
+                <div class="list_item item1">
+                    <div class="nd1">
+                        <p>Product</p>
+                        <img src="/image/icons8-package-30_color.png" alt="icon">
+                    </div>
+                    <h3>30</h3>
+                </div>
+                <div class="list_item item2">
+                    <div class="nd1">
+                        <p>Prurchase orders</p>
+                        <img src="/image/icons8-add-shopping-cart-30_color.png" alt="icon">
+                    </div>
+                    <h3>83</h3>
+                </div>
+                <div class="list_item item3">
+                    <div class="nd1">
+                        <p>sales orders</p>
+                        <img src="/image/icons8-shopping-cart-30 (1).png" alt="icon">
+                    </div>
+                    <h3>79</h3>
+                </div>
+                <div class="list_item item4">
+                    <div class="nd1">
+                        <p>inventory alerts</p>
+                        <img src="/image/icons8-notification-30 (1).png" alt="icon">
+                    </div>
+                    <h3>56</h3>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="charts">
+
+                <div class="charts-card">
+                  <p class="chart-title">Top 5 Products</p>
+                  <div id="bar-chart"></div>
+                </div>
+      
+                <div class="charts-card">
+                  <p class="chart-title">Purchase and Sales Orders</p>
+                  <div id="area-chart"></div>
+                </div>
+      
+              </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+
+    <script src="/javascript/admin.js"></script>
+</body>
+</html>
