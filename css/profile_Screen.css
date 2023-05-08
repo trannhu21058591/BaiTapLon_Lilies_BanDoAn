@@ -142,9 +142,31 @@ h3{
     flex-direction: column;
     align-items: center;
 }
-.img_avt img{
-    margin-top: 35px;
+.img_avt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 35px;
+    margin-top: 35px;
+}
+.img_avt img{
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.img_avt img{
+    width: 150px;
+    height: 150px;
+}
+.fileIMG{
+    display: none;
+}
+.img_avt label{
+    background-color: rgb(206, 193, 193);
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 .input_infor{
     display: flex;
