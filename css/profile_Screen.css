@@ -460,7 +460,15 @@ h3{
     }
     .img_avt img{
         width: 80px;
+        height: 80px;
     }
+    .img_avt label{
+        font-size: 8px;
+        width: 80px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
     h3{
         font-size: 13px;
     }
@@ -547,10 +555,11 @@ h3{
     }
     .img_avt img {
         width: 70px;
+        height: 70px;
     }
     
     .img_avt img {
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 }
